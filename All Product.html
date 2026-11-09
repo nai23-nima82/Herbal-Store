@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Herbal Store</title>
+    <link rel="icon" href="./Image/herbal-store.PNG">
+    <link rel="stylesheet" href="All Product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<header>
+    <h1 id="title"><span class="material-symbols-outlined primary-side-menu-open">arrow_menu_open</span>Herbal Store</h1>
+    <ul class="navigation-option">
+        <li class="non-expandable"><a href="index.html">Home</a></li>
+        <li class="non-expandable">
+            <a href="./All Product.html">
+               Shop 
+            </a>
+        </li>
+        <li class="expandable">
+            Categories
+            <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
+            <div class="dropdown">
+                <ul>
+                    <li data-category="herb">Herb</li>
+                    <li data-category="spice">Spice</li>
+                    <li data-category="juice">Juice</li>
+                </ul>
+            </div>
+        </li>
+        <li class="non-expandable"><a href="About.html">About</a></li>
+        <li class="non-expandable"><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="account-cart">
+        <div class="search-input">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input type="text" placeholder="Search products">
+            <div class="search-results">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <a href="./Account Section/Account Center.html"><button id="account"><span class="material-symbols-outlined">account_circle</span></button></a>
+        <a id="cart" href="./Cart.html"><span class="material-symbols-outlined">shopping_cart</span>Cart (0)</a>
+    </div>
+</header>
+<body>
+    <div class="primary-side-menu">
+        <span class="material-symbols-outlined primary-side-menu-close">keyboard_arrow_left</span>
+        <div class="sm-search">
+            <input type="text" placeholder="Search products ...">
+            <span class="material-symbols-outlined">search</span>
+            <div class="sm-search-result">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <hr id="line">
+        <ul class="sm-navigation">
+            <li>
+                <a href="./index.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <h4>Home</h4>
+                </a>
+            </li>
+            <li>
+                <a href="./All Product.html">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <h4>Shop</h4>
+                </a>
+            </li>
+            <li>
+                <a class="sm-expandable">
+                    <span class="material-symbols-outlined">category</span>
+                    <h4>Category</h4>
+                    <span class="material-symbols-outlined sm-arrow">keyboard_arrow_down</span>
+                </a>
+                <div class="dropdown-category">
+                    <a href="./All Product.html?category=herb">Herb</a>
+                    <a href="./All Product.html?category=juice">Juice</a>
+                    <a href="./All Product.html?category=spice">Spice</a>
+                </div>
+            </li>
+            <li>
+                <a href="./About.html">
+                    <span class="material-symbols-outlined">info</span>
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li>
+                <a href="./Contact.html">
+                    <span class="material-symbols-outlined">mail</span>
+                    <h4>Contact</h4>
+                </a>
+            </li>
+            <li id="li-of-cart">
+                <a href="./Cart.html">
+                    <p id="cart-items">0</p>
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <h4>Cart</h4>
+                </a>
+            </li>
+            <li>
+                <a href="./Account Section/Account Center.html">
+                    
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <h4>Account Center</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="overlay"></div>
+        <div class="notification">
+            <p></p>
+            <span></span>
+        </div>
+        <div class="banner">
+            <h1>All Products</h1>
+            <p>Discover our natural & healthy products, carefully selected for better you</p>
+        </div>
+        <div class="main-content">
+            <div class="filtering">
+                <span class="material-symbols-outlined backarrow">keyboard_arrow_left</span>
+                <h4 class="category">Category <span class="material-symbols-outlined arrow">keyboard_arrow_up</span></h4>
+                <div class="category-content">
+                    <ul>
+                        <li class="active-category" data-category="all-products">
+                            <span class="material-symbols-outlined">all_inclusive</span>
+                            <p>All Product</p>
+                            <p>10</p>
+                        </li>
+                        <li data-category="herb">
+                            <span class="material-symbols-outlined">psychiatry</span>
+                            <p>Herbs</p>
+                            <p>10</p>
+                        </li>
+                        <li data-category="spice">
+                            <span class="material-symbols-outlined">spa</span>
+                            <p>Spice</p>
+                            <p>10</p>
+                        </li>
+                        <li data-category="juice">
+                            <span class="material-symbols-outlined">grocery</span>
+                            <p>Juice</p>
+                            <p>10</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="seperator">
+                <h4 class="price-range">Price range <span class="material-symbols-outlined arrow">keyboard_arrow_up</span></h4>
+                <div class="filtering-by-price">
+                    <div>
+                        <input type="range" name="max-price" id="max-price" min="1" value="50" max="50" step="1">
+                        <p id="max"></p>
+                    </div>
+                </div>
+                <hr class="seperator">
+                <h4 class="rating-filter">Rating <span class="material-symbols-outlined arrow">keyboard_arrow_up</span></h4>
+                <div class="filtering-by-stars">
+                    <ul>
+                        <li>
+                            <input type="radio" name="star" value="1">
+                            <p>1</p>
+                            <span class="material-symbols-outlined">star_half</span>
+                            & Up
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="star" value="2">
+                            <p>2</p>
+                            <span class="material-symbols-outlined">star_half</span>
+                            & Up
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="star" value="3">
+                            <p>3</p>
+                            <span class="material-symbols-outlined">star_half</span>
+                            & Up
+                            <p>5</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="star" value="4">
+                            <p>4</p>
+                            <span class="material-symbols-outlined">star_half</span>
+                            & Up
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="star" value="5">
+                            <p>5</p>
+                            <span class="material-symbols-outlined">star_half</span>
+                            <p>2</p>
+                        </li>
+                    </ul>
+                    <button id="clear-filter">Clear</button>
+                </div>
+                <hr class="seperator">
+                <h4 class="in-stock">In stock <span class="material-symbols-outlined arrow">keyboard_arrow_up</span></h4>
+                <div class="filtering-by-instock">
+                    <label for="instock">
+                        <input type="checkbox" name="instock" id="instock">
+                        <p>Only show in stock</p>
+                    </label>
+                </div>
+                <hr class="seperator">
+                <h4 class="discount">Discount <span class="material-symbols-outlined arrow">keyboard_arrow_up</span></h4>
+                <div class="filtering-by-discount">
+                    <label for="discount">
+                        <input type="checkbox" name="discount" id="discount">
+                        <p>On sale</p>
+                    </label>
+                </div>
+            </div>
+            <div class="products">
+                <div>
+                    <p id="number-of-displayed-products">Showing 20 of 125 products</p>
+                    <div class="view-selection">
+                        <span class="material-symbols-outlined filter">filter_alt</span>
+                        <span class="material-symbols-outlined view" data-view="list">view_list</span>
+                        <span class="material-symbols-outlined view active" data-view="grid">grid_view</span>
+                    </div>
+                </div>
+                <div class="products-cart-container">
+                    
+                </div>
+                <div class="pagination">
+                    <span class="material-symbols-outlined previous disabled-pagination">arrow_left</span>
+                    <input type="number" value="1" id="pagi-input">
+                    <span class="material-symbols-outlined next">arrow_right</span>
+                    <p>of <b id="total-pages-b">5</b> pages</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="All Product.js"></script>
+</body>
+<footer>
+    <div class="top">
+        <div class="website-name">
+            <span class="material-symbols-outlined">compost</span>
+            <p>Herbal Store</p>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a><a href="index.html">Shop</a><a href="About.html">About</a><a href="Contact.html">Contact</a>
+        </div>
+        <div class="social-meida">
+            <a href="index.html"><img src="./Image/instagram.png" alt=""></a>
+            <a href="index.html"><img src="./Image/telegram.png" alt=""></a>
+            <a href="index.html"><img src="./Image/x.png" alt=""></a>
+        </div>
+    </div>
+    <div class="bottom">
+        <p><span class="material-symbols-outlined copyright">copyright</span>Herbal Store, all rights reserved</p>
+    </div>
+</footer>
+</html>
