@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="overlay"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Address - Herbal Store</title>
+        <link rel="icon" type="image/png" href="../Image/herbal-store.png">
+        <link rel="stylesheet" href="Account Center.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <header>
+        <h1 id="title"><span class="material-symbols-outlined primary-side-menu-open">arrow_menu_open</span>Herbal Store</h1>
+        <ul class="navigation-option">
+            <li class="non-expandable"><a href="../index.html">Home</a></li>
+            <li class="non-expandable"><a href="./All Product.html">Shop</a></li>
+            <li class="expandable">
+                Categories
+                <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
+                <div class="dropdown">
+                    <ul>
+                        <li data-category="herb">Herb</li>
+                        <li data-category="spice">Spice</li>
+                        <li data-category="juice">Juice</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="non-expandable"><a href="../About.html">About</a></li>
+            <li class="non-expandable"><a href="../Contact.html">Contact</a></li>
+        </ul>
+        <div class="account-cart">
+            <div class="search-input">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input type="text" placeholder="Search products">
+                <div class="search-results">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <a href="./Account Center.html"><button id="account"><span class="material-symbols-outlined">account_circle</span></button></a>
+            <a id="cart" href="../Cart.html"><span class="material-symbols-outlined">shopping_cart</span>Cart (0)</a>
+        </div>
+    </header>
+    <body>
+        <div class="primary-side-menu">
+            <span class="material-symbols-outlined primary-side-menu-close">keyboard_arrow_left</span>
+            <div class="sm-search">
+                <input type="text" placeholder="Search products ...">
+                <span class="material-symbols-outlined">search</span>
+                <div class="sm-search-result">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <hr id="line">
+            <ul class="sm-navigation">
+                <li>
+                    <a href="../index.html">
+                        <span class="material-symbols-outlined">home</span>
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="../All Product.html">
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <h4>Shop</h4>
+                    </a>
+                </li>
+                <li>
+                    <a class="sm-expandable">
+                        <span class="material-symbols-outlined">category</span>
+                        <h4>Category</h4>
+                        <span class="material-symbols-outlined sm-arrow">keyboard_arrow_down</span>
+                    </a>
+                    <div class="dropdown-category">
+                        <a href="../All Product.html?category=herb">Herb</a>
+                        <a href="../All Product.html?category=juice">Juice</a>
+                        <a href="../All Product.html?category=spice">Spice</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../About.html">
+                        <span class="material-symbols-outlined">info</span>
+                        <h4>About</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Contact.html">
+                        <span class="material-symbols-outlined">mail</span>
+                        <h4>Contact</h4>
+                    </a>
+                </li>
+                <li id="li-of-cart">
+                    <a href="../Cart.html">
+                        <p id="cart-items">0</p>
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <h4>Cart</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="Account Center.html">
+                        
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <h4>Account Center</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <div class="account-center-option">
+                <span class="material-symbols-outlined backarrow">keyboard_arrow_left</span>
+                <ul>
+                    <a href="Orders.html"><li><span class="material-symbols-outlined">order_play</span>Orders</li></a>
+                    <a href="Wishlist.html"><li><span class="material-symbols-outlined">favorite</span>Wishlist</li></a>
+                    <a href="My Address.html"><li class="active"><span class="material-symbols-outlined">home_pin</span>My Address</li></a>
+                    <a href="Account Center.html"><li><span class="material-symbols-outlined">account_circle</span>My Account</li></a>
+                    <a href="../index.html"><li><span class="material-symbols-outlined">logout</span>Log out</li></a>
+                </ul>
+            </div>
+            <div class="settings">
+                <h1 id="menu"><span class="material-symbols-outlined" id="account-menu">menu_open</span>My Address</h1>
+                <div>
+                    <h4>Location information</h4>
+                    <div class="location-detail">
+                        <div class="country-option">
+                            <input type="text" placeholder="Country" class="disabled-element">
+                            <div class="location-dropdown">
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                            <span class="material-symbols-outlined">progress_activity</span>
+                        </div>
+                        <div class="city-option">
+                            <input type="text" placeholder="City" class="disabled-element">
+                            <div class="location-dropdown">
+                                <ul>
+                                    
+                                </ul>
+                            </div>
+                            <span class="material-symbols-outlined">progress_activity</span>
+                        </div>
+                        <input type="text" placeholder="Zip Code" id="zip-code" class="disabled-element">
+                        <input type="text" placeholder="Street address" id="street-address" class="disabled-element">
+                    </div>
+                    <div class="button-container">
+                        <button class="edit">Edit</button>
+                        <button class="save disabled-element" id="save-address" disabled>Save</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="notification">
+                <p></p>
+                <span></span>
+            </div>
+        </main>
+        <script type="module" src="My Address.js"></script>
+    </body>
+    <footer>
+        <div class="top">
+            <div class="website-name">
+                <span class="material-symbols-outlined">compost</span>
+                <p>Herbal Store</p>
+            </div>
+            <div class="nav">
+                <a href="../index.html">Home</a><a href="../index.html">Shop</a><a href="../About.html">About</a><a href="../Contact.html">Contact</a>
+            </div>
+            <div class="social-meida">
+                <a href="../index.html"><img src="../Image/instagram.png" alt=""></a>
+                <a href="../index.html"><img src="../Image/telegram.png" alt=""></a>
+                <a href="../index.html"><img src="../Image/x.png" alt=""></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p><span class="material-symbols-outlined copyright">copyright</span>Herbal Store, all rights reserved</p>
+        </div>
+    </footer>
+</html>
